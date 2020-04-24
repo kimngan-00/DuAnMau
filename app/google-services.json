@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "742320648451",
+    "firebase_url": "https://duanmau-88425.firebaseio.com",
+    "project_id": "duanmau-88425",
+    "storage_bucket": "duanmau-88425.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742320648451:android:6db599428ca622e9ab7936",
+        "android_client_info": {
+          "package_name": "com.example.duanmau"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742320648451-7t60rebnf3m4m88r3se9p2qpkrojklbg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.duanmau",
+            "certificate_hash": "d411775f0c3c0a533ed437c136e5a69400ed3fb7"
+          }
+        },
+        {
+          "client_id": "742320648451-usvt4hnfqtunkcvk509p270pm6gdr7av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrgvuzVUCM6t0-9jvVDfHksYxC1HmrlgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742320648451-usvt4hnfqtunkcvk509p270pm6gdr7av.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

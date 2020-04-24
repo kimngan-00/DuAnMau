@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ThongKeDoanhSoFragment">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:textColor="@color/green"
+       android:text="Top 10 Best Sales"
+       android:textSize="40dp"
+       android:gravity="center"
+       android:id="@+id/fDoanhSo_txtTieuDe"
+       android:fontFamily="@font/lobster"
+       />
+
+    <ListView
+        android:id="@+id/fDoanhSo_lvSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fDoanhSo_txtTieuDe"
+        android:layout_marginTop="10sp"
+        android:divider="@color/white"
+        android:dividerHeight="10dp" />
+</RelativeLayout>

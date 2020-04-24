@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.DoiMatKhauFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/background_login2"
+        android:paddingVertical="50sp"
+        android:text="Phương Nam"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/nabila" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:text="Đổi Mật Khẩu"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtOldPass"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/lock_24px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="  Nhập Mật Khẩu"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtNewPass1"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/lock_24px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="  Mật Khẩu Mới"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Sử dụng ít nhất 6 kí tự)"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:textSize="20sp"
+/>
+
+
+    <EditText
+        android:id="@+id/edtNewPass2"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/lock_24px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="  Xác Nhận Mật Khẩu"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="30sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/button_bg"
+        android:text="Đổi Mật Khẩu"
+        android:textAllCaps="false"
+        android:textColor="#FFFCFC"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+
+
+</LinearLayout>
+

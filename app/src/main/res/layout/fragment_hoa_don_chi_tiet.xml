@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.HoaDonChiTietFragment">
+
+    <TextView
+        android:id="@+id/fTaoHoaDon_txtTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nabila"
+        android:gravity="center"
+        android:text="Tạo chi tiết hóa đơn"
+        android:textColor="@color/green"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/fTaoHoaDon_lnTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fTaoHoaDon_txtTieuDe"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="Tên Sách"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Đơn Giá"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Số Lượng"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Thành Tiền"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/fTaoHoaDon_lvChiTietHD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fTaoHoaDon_lnTieuDe"
+        android:divider="@color/white"
+        android:dividerHeight="10dp" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fTaoHoaDon_lnTongTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fTaoHoaDon_lvChiTietHD"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Tổng Tiền: "
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fTaoHoaDon_txtTongTien"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/green"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fTaoHoaDon_lnTongTien"
+        android:layout_marginTop="10sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp">
+
+        <Button
+            android:id="@+id/fTaoHoaDon_btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/button_dialog"
+            android:padding="10sp"
+            android:text="Lưu"
+            android:textAllCaps="false"
+            android:textColor="#FCFCFC"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/fTaoHoaDon_btnNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/button_dialog"
+            android:padding="10sp"
+            android:text="Làm Mới"
+            android:textAllCaps="false"
+            android:textColor="#FCFCFC"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/fTaoHoaDon_btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_dialog"
+            android:padding="10sp"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:textColor="#FCFCFC"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fTaoHoaDon_FAB_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:background="#4CAF50"
+        android:src="@drawable/add_64px"
+        app:borderWidth="0sp"
+        app:maxImageSize="64dp" />
+
+</RelativeLayout>

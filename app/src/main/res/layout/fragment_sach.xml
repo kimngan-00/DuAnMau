@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SachFragment">
+
+    <TextView
+        android:id="@+id/fSach_txtTieudeSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/nabila"
+        android:gravity="center"
+        android:text="Sách"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <Spinner
+        android:id="@+id/fSach_Spinner_TheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fSach_txtTieudeSach" />
+
+
+    <ListView
+        android:id="@+id/lv_sach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fSach_Spinner_TheLoai"
+        android:layout_marginTop="10sp"
+        android:divider="@color/white"
+        android:dividerHeight="10dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fSach_FAB_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:background="#4CAF50"
+        android:src="@drawable/add_64px"
+        app:borderWidth="0sp"
+        app:maxImageSize="64dp" />
+
+</RelativeLayout>
