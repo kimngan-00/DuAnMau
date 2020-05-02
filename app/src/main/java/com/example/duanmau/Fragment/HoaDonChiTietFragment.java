@@ -27,6 +27,8 @@ import com.example.duanmau.Model.HoaDonChiTiet;
 import com.example.duanmau.Model.Sach;
 import com.example.duanmau.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -56,6 +58,7 @@ public class HoaDonChiTietFragment extends Fragment {
     private int soLuongBanDau;
     private HoaDonChiTietAdapter hoaDonChiTietAdapter;
     DatabaseReference dataHoaDon;
+    private FirebaseUser currentUser;
 
 
     public HoaDonChiTietFragment() {
@@ -73,6 +76,7 @@ public class HoaDonChiTietFragment extends Fragment {
         sachDAO = new SachDAO(getActivity(), this);
         hoaDon = new HoaDon();
         hoaDonChiTiet = new HoaDonChiTiet();
+        currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
         init();
 
@@ -137,6 +141,7 @@ public class HoaDonChiTietFragment extends Fragment {
         btnThem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                hoaDon.setNguoiXuat(currentUser.getDisplayName());
                 hoaDon.setTongTien(tongTienHD);
                 hoaDonDAO.insertHD(idHD, hoaDon);
                 getActivity().getSupportFragmentManager()

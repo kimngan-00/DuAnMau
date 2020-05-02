@@ -3,7 +3,15 @@ package com.example.duanmau.Model;
 public class HoaDonChiTiet {
     String idHDCT,  tenSach, idHoaDon, idSach;
     int soluong;
-    long donGia, thanhTien;
+    long donGia, thanhTien, longDate;
+
+    public long getLongDate() {
+        return longDate;
+    }
+
+    public void setLongDate(long longDate) {
+        this.longDate = longDate;
+    }
 
     public HoaDonChiTiet() {
     }

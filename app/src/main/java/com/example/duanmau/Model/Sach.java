@@ -1,8 +1,8 @@
 package com.example.duanmau.Model;
 
 public class Sach {
-    String tenSach, theLoai, tacGia, id;
-    String uriImgSach;
+   private String tenSach, theLoai, tacGia, id;
+   private String uriImgSach;
     int giaTien,soLuong;
 
     public Sach() {

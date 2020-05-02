@@ -5,87 +5,88 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Fragment.DoiMatKhauFragment">
+    tools:context=".Activity.SignUpActivity">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:background="@drawable/background_login2"
-        android:paddingVertical="50sp"
-        android:text="Phương Nam"
-        android:textAlignment="center"
+        android:gravity="center"
+        android:text="Sign Up"
         android:textColor="#FFFFFF"
         android:textSize="40sp"
         android:textStyle="bold"
         app:fontFamily="@font/nabila" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/acDangNhap_civUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20sp"
-        android:text="Đổi Mật Khẩu"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:layout_marginTop="10dp"
+        android:src="@drawable/add_user" />
+
+
 
     <EditText
-        android:id="@+id/fDoiMK_edtOldPass"
-        android:inputType="textPassword"
-        android:drawableLeft="@drawable/lock_24px"
+        android:id="@+id/acDangNhap_edtDisplayName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20sp"
-        android:layout_marginTop="20sp"
-        android:hint="  Nhập Mật Khẩu"
+        android:layout_marginTop="10sp"
+        android:hint="Display Name"
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/fDoiMK_edtNewPass1"
-        android:drawableLeft="@drawable/lock_24px"
+        android:id="@+id/acDangNhap_edtBirthDay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20sp"
-        android:layout_marginTop="20sp"
-        android:hint="  Mật Khẩu Mới"
+        android:layout_marginTop="10sp"
+        android:hint="Your BirthDay"
         android:textSize="20sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="(Sử dụng ít nhất 6 kí tự)"
-        android:layout_marginHorizontal="20sp"
-        android:layout_marginTop="20sp"
-        android:textSize="20sp"
-/>
-
-
     <EditText
-        android:id="@+id/fDoiMK_edtNewPass2"
-        android:inputType="textPassword"
-        android:drawableLeft="@drawable/lock_24px"
+        android:id="@+id/acDangNhap_edtPhoneNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20sp"
-        android:layout_marginTop="20sp"
-        android:hint="  Xác Nhận Mật Khẩu"
+        android:layout_marginTop="10sp"
+        android:hint="Phone Number"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/acDangNhap_edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10sp"
+        android:hint="Email"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/acDangNhap_edtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="10sp"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:textSize="20sp" />
 
     <Button
-        android:id="@+id/fDoiMK_btnDoiMK"
+        android:id="@+id/acDangNhap_btnDangNhap"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginHorizontal="30sp"
         android:layout_marginTop="20sp"
         android:background="@drawable/button_bg"
-        android:text="Đổi Mật Khẩu"
+        android:text="Sign Up"
         android:textAllCaps="false"
         android:textColor="#FFFCFC"
         android:textSize="30sp"
-        android:textStyle="normal" />
-
-
+        android:textStyle="bold"
+        />
 
 </LinearLayout>
-

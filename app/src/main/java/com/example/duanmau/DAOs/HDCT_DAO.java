@@ -18,7 +18,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class HDCT_DAO {
@@ -43,6 +47,9 @@ public class HDCT_DAO {
 
         //insert HDCT
         hoaDonChiTiet.setIdHDCT(idHDCT);
+        Date date = Calendar.getInstance().getTime();
+        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
+        hoaDonChiTiet.setLongDate(date.getTime());
         sachDAO.updateSoLuongSach(hoaDonChiTiet.getIdSach(), soLuongBanDau - hoaDonChiTiet.getSoluong());
         dataHDCT.child(idHDCT).setValue(hoaDonChiTiet, new DatabaseReference.CompletionListener() {
             @Override

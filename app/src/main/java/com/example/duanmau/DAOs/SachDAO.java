@@ -33,7 +33,6 @@ import java.util.List;
 public class SachDAO {
     DatabaseReference dataSach;
     Context context;
-    String idTheLoai;
     Fragment fragment;
 
     public SachDAO() {

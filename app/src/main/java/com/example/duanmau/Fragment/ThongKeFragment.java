@@ -30,6 +30,7 @@ public class ThongKeFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_thong_ke, container, false);
 
+        getFragmentManager().beginTransaction().replace(R.id.frame_all_thongke,new ThongKeNgayFragment()).commit();
         bottomNavigationView = view.findViewById(R.id.bottom_all_thongke);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="20dp">
+
+    <TextView
+        android:id="@+id/dUpdateProfile_txtTieuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/nabila"
+        android:paddingTop="10dp"
+        android:text="Update Profile"
+        android:textColor="@color/green"
+        android:textSize="30dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dUpdateProfile_civUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dUpdateProfile_txtTieuDe"
+        android:src="@drawable/add_user" />
+
+    <EditText
+        android:id="@+id/dUpdateProfile_edtDisplayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dUpdateProfile_civUser"
+        android:layout_marginTop="10dp"
+        android:hint="Display Name"
+        android:paddingHorizontal="20dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dUpdateProfile_edtBirthDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dUpdateProfile_edtDisplayName"
+        android:layout_marginTop="10dp"
+        android:hint="BirthDay"
+        android:paddingHorizontal="20dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dUpdateProfile_edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dUpdateProfile_edtBirthDay"
+        android:layout_marginTop="10dp"
+        android:hint="PhoneNumber"
+        android:paddingHorizontal="20dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/dUpdateProfile_btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dUpdateProfile_edtPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:paddingHorizontal="20dp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

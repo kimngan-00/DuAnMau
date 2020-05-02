@@ -11,4 +11,6 @@ public class Firebase_CallBack {
     public void getHoaDon(List<HoaDon> hoaDonList){}
 
     public void getHDCT(List<HoaDonChiTiet> hoaDonChiTietList){}
+
+    public void getUser(List<User> userList){}
 }

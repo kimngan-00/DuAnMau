@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".Fragment.ThongKeNgayFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/fThongKeNgay_txtTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:gravity="center"
+        android:text="Thống Kê Theo Ngày"
+        android:textColor="@color/green"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/fThongKeNgay_edtNgayBatDau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fThongKeNgay_txtTieuDe"
+        android:hint="Chọn ngày bắt đầu"
+        android:paddingHorizontal="20dp"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/fThongKeNgay_edtNgayKetThuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fThongKeNgay_edtNgayBatDau"
+        android:layout_marginBottom="10dp"
+        android:hint="Chọn ngày kết thúc"
+        android:paddingHorizontal="20dp"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/fThongKeNgay_btnThongKe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fThongKeNgay_edtNgayKetThuc"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Thống Kê"
+        android:textAllCaps="false"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/fThongKeNgay_lvThongKe"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="thong ke theo ngay" />
+        android:layout_below="@+id/fThongKeNgay_btnThongKe" />
 
-</FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/raw_user_civAvatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:paddingVertical="10dp"
+        android:src="@drawable/add_user" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingVertical="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/raw_user_tvDisplayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Display Name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/raw_user_tvPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PhoneNumber"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/raw_user_tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</LinearLayout>

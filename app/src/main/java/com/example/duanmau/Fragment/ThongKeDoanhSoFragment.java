@@ -99,16 +99,21 @@ public class ThongKeDoanhSoFragment extends Fragment {
                     });
                 }
 
-                doanhSoAdapter = new DoanhSoAdapter(getContext(),R.layout.raw_top10_doanhso,thongKeList);
-                lvSach.setAdapter(doanhSoAdapter);
+                if(thongKeList.size()<=10){
+                    doanhSoAdapter = new DoanhSoAdapter(getContext(),R.layout.raw_top10_doanhso,thongKeList);
+                    lvSach.setAdapter(doanhSoAdapter);
+                }else {
+                    List<ThongKe> thongKeList2 = new ArrayList<>();
+                    for (int i=0;i<10;i++){
+                        thongKeList2.add(thongKeList.get(i));
+                        doanhSoAdapter = new DoanhSoAdapter(getContext(),R.layout.raw_top10_doanhso,thongKeList2);
+                        lvSach.setAdapter(doanhSoAdapter);
+                    }
+
+                }
                 super.getSach(sachList);
             }
         });
-
-
-
-
-
 
             }
         });

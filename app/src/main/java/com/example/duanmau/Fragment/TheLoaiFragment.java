@@ -62,6 +62,7 @@ public class TheLoaiFragment extends Fragment {
 
                 theLoaiAdapter = new TheLoaiAdapter(getActivity(), R.layout.raw_the_loai, theLoaiList);
                 lvTheLoai.setAdapter(theLoaiAdapter);
+
             }
         });
 
